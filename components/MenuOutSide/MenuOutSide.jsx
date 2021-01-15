@@ -222,6 +222,7 @@ const MobileNavigation = styled.div`
 `;
 
 const BasketIconMobile = styled.div`
+    user-select: none;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -276,7 +277,7 @@ const BasketOpen = styled.div`
 
 
 const BasketIcon = styled.div`
-    
+    user-select: none;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -338,6 +339,7 @@ const ListCardProduct = styled.ul`
 `;
 
 const ContainerProduct = styled.div`
+    user-select: none;
     width: 100%;
     background-color: #dddddd;
     padding: 75px 0;
