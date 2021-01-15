@@ -1,0 +1,83 @@
+.stoks__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+
+.stoks__container h1 {
+  border-left: 8px solid red;
+  font-size: 37px;
+  padding-left: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;  
+}
+
+.stoks__list {
+  margin-top: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.stoks__item {
+  min-width: 570px;
+  min-height: 410px;
+  margin: 15px;
+}
+
+.item--info {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.item--info h2 {
+  color: rgb(255, 255, 255);
+  font-size: 37px;
+  line-height: 1;
+}
+
+.item--text {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.dark--text {
+  color: rgb(132, 132, 132);
+}
+
+.light--text {
+  color: rgb(231, 205, 205);
+}
+
+.alc-botle {
+  background: url('/img/alko_s_soboy_akcii.jpg');
+}
+
+.mini-menu {
+  background: url('/img/menu_na_akcii.jpg');
+}
+
+.women-cake {
+  background: url('/img/women--cake.jpg');
+}
+
+.men-kebab {
+  background: url('/img/men--kebab.jpg');
+
+}
+
+@media (max-width: 592px) {
+  .stoks__list {
+    margin: 0;
+  }
+  .stoks__item {
+    max-width: 100%;
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

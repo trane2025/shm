@@ -1,0 +1,60 @@
+.sucsess__window {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 231, 231);
+}
+
+.sucsess__box {
+  width: 400px;
+  margin: 70px auto;
+  background-color: white;
+}
+
+.sucsess__box__header {
+  height: 25px;
+  padding-left: 10px;
+  line-height: 28px;
+  border-left: 7px solid red;
+}
+
+.sucsess__message {
+  padding: 20px;
+}
+
+.sucsess__box__text {
+  color: grey;
+  font-size: 18px;
+}
+
+.check__mark {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+  
+  background: linear-gradient(220deg, #efa4a4 10%, #f50000 63%, #ff0300 100%);
+}
+
+ .check__mark span {
+  content: "";
+  position: absolute;
+  width: 34px;
+  transform: rotate(-45deg);
+  height: 9px;
+  top: 45px;
+  left: 43px;
+  background-color: rgb(255, 255, 255);
+}
+
+.check__mark span::before {
+  content: "";
+  content: "";
+  position: absolute;
+  width: 20px;
+  transform: rotate(90deg);
+  height: 9px;
+  top: -12px;
+  left: -5.59px;
+  background-color: rgb(255, 255, 255);
+}

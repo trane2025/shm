@@ -1,0 +1,57 @@
+.about__cafe--section {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.about__cafe--text {
+  margin-top: 98px;
+  flex-basis: 50%;
+}
+
+.about__cafe--text p {
+  font-size: 19px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.about__cafe--header {
+  padding: 10px 0 10px 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  font-size: 36px;
+}
+.about__cafe--header::before {
+  content: "";
+    display: inline-flex;
+    position: relative;
+    bottom: 3px;
+    width: 8px;
+    height: 45px;
+    background: #c32222;
+    margin-right: 26px;
+}
+
+.about__cafe__img__section {
+  margin-top: 98px;
+  margin-bottom: 85px;
+}
+
+@media (max-width: 1150px) {
+  .about__cafe--section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 539px) {
+  .about__cafe--text br {
+    display: none;
+  }
+  .about__cafe--text p {
+    padding: 10px;
+  }
+}

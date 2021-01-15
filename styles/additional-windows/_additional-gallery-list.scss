@@ -1,0 +1,253 @@
+
+.overflow__non__list {
+  overflow: hidden;
+}
+
+.additional__gallery__header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.additional__gallery__header h2 {
+  text-transform: uppercase;
+}
+
+.additional__gallery__header div {
+  margin: 0 auto;
+  width: 50px;
+  border-bottom: 4px solid red;
+}
+
+.additional__gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-template-rows: 200px repeat(auto-fill, 200px);
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .additional__gallery__grid {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+@media (max-width: 590px) {
+  .additional__gallery__grid {
+    grid-template-columns: repeat(1, 280px);
+  }
+}
+
+
+
+/* Modal */
+.additional__gallery__container {
+  position: relative;
+}
+.additional__gallery__list {
+  position: relative;
+}
+
+.modal__Gallery {
+  position: fixed;
+  width: 600px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px; /* Negative half of height. */
+  margin-left: -300px; /* Negative half of width. */
+}
+
+.modal__Gallery__window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 10000;
+}
+
+.--close__gallery {
+  z-index: -1;
+  display: none;
+}
+
+.gallery__modal__img {
+  z-index: 10;
+  // max-width: 100%!important;
+  // max-height: 100%!important;
+}
+
+.gallery__modal__img:hover {
+  cursor: pointer;
+}
+
+.close{
+  position: absolute;
+  top: 5px;
+  right: -25px;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.close:before,
+.close:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 65px;
+  width: 26px;
+  height: 4px;
+  background: #ffffff;
+}
+
+.close:before {
+  webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close:after {
+  webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.full__screan_btn {
+  bottom: 6px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  // background-color: rgb(139, 139, 139, 0.5);
+}
+
+.full__screan_btn:hover {
+  cursor: pointer;
+}
+
+/* Slaider*/
+
+.gallery__arrow {
+  position: fixed;
+  z-index: 12;
+}
+
+
+@media (max-width: 665px) {
+  .modal__Gallery {
+    width: 500px;
+    margin-left: -250px;
+  }
+}
+
+@media (max-width: 570px) {
+  .modal__Gallery {
+    width: 400px;
+    margin-left: -200px;
+  }
+}
+
+@media (max-width: 462px) {
+  .modal__Gallery {
+    width: 300px;
+    margin-left: -150px;
+  }
+
+  .close {
+    display: none;
+  }
+}
+
+
+/* fullscreen slaider */
+
+.fullscreen__wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.full__screen {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.fullscreen__body {
+  display: flex;
+  flex: 1 1 auto;
+  position: fixed;
+  align-self: center;
+  max-width: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.full {
+  max-width: 80%;
+}
+
+.fullscreen__container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.fullscreen__img {
+  align-self: center;
+}
+
+
+
+.fullscreen__arrow {
+  position: relative;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 10px;
+  align-self: center;
+  outline: none;
+}
+
+.fullscreen__arrow:hover {
+  cursor: pointer;
+  background-color: rgb(161, 161, 161);
+}
+
+.fullscreen__arrow__right::before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 6.5px;
+  left: 2px;
+  border-top: 10px solid #b2b0b4;
+  border-right: 10px solid  #b2b0b4;
+  margin-right: 60px;
+  transform: rotate(45deg);
+}
+
+.fullscreen__arrow__right:hover::before {
+  border-top: 10px solid #ffffff;
+  border-right: 10px solid  #ffffff;
+}
+
+.fullscreen__arrow__left::before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 6.5px;
+  left: 13px;
+  border-top: 10px solid #b2b0b4;
+  border-right: 10px solid  #b2b0b4;
+  margin-right: 60px;
+  transform: rotate(-135deg);
+}
