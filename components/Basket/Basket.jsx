@@ -9,7 +9,6 @@ function Basket({ products, deleteProduct, changeSelectedCount, countPrice, clou
 
     return (
         <Container>
-            <h1>Изменения</h1>
             <Title>
                 <h2>Ваш заказ:</h2>
                 {order !== "true" && <i className='clouse-Icon' onClick={clouseBasket}>
