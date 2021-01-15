@@ -293,6 +293,10 @@ const BasketIcon = styled.div`
     right: 50px;
     z-index: 2;
 
+    svg {
+        user-select: none;
+    }
+
     .container-count {
         position: absolute;
         display: flex;
