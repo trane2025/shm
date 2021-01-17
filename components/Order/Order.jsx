@@ -287,6 +287,7 @@ const BasketWraper = styled.div`
         right: ${props => props.open ? '0' : '-100%'};
         z-index: 21;
         width: 100%;
+        height: 100%;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
         
