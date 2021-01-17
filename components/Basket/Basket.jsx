@@ -168,7 +168,7 @@ const Container = styled.div`
 
     @media (max-width: 760px){
         box-shadow: none;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         
         ul {

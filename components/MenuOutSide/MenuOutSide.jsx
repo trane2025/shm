@@ -84,7 +84,7 @@ function MenuOutSide({ category, products, title, activeLink, prelouder, query, 
                     </div>}
 
                 </BasketIcon>}
-                <BasketOpen>
+                <BasketOpen open={showMobileBasket}>
                     <BasketContainer query={query} setShowMobileBasket={setShowMobileBasket} />
                 </BasketOpen>
                 <Menu>
@@ -267,9 +267,10 @@ const BasketOpen = styled.div`
 
     @media (max-width: 760px){
         top: 0;
-        left: 0;
+        right: ${props => props.open ? '0' : '-100%'};
         z-index: 21;
         width: 100%;
+        height: 100%;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     }
