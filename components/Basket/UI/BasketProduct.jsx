@@ -72,6 +72,7 @@ const TitleProduct = styled.div`
         font-size: 20px;
         font-weight: 900;
         width: 140px;
+        margin-right: 5px;
     }
 
     @media (max-width: 760px){
@@ -79,6 +80,7 @@ const TitleProduct = styled.div`
         display: block;
 
         h3 {
+            margin-right: 0;
             text-align: start;
             font-size: 16px;
             line-height: 100%;
