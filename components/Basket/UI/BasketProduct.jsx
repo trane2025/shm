@@ -57,7 +57,7 @@ function BasketProduct({ image, title, portion, price, selectedPortion, unit, ba
     )
 }
 
-// Комментарий для Серёги
+
 
 export default BasketProduct;
 
